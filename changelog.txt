@@ -1,117 +1,121 @@
-Version 1.5.6
-added daramas online addon in ignore setsolved list
+PalcoTV 0.1beta
 
-Version 1.5.5
-added zemtv addon in ignore setsolved list, thanks to gujal and alibaba, a quick fix in iphonetv_url function
-
-Version 1.5.4
-minor change in vipracing for ilive
-
-Version 1.5.3
-added a function to parse ads in hls m38 file ferrari
-
-Version 1.5.2
-Fixed accented char issue in m3u8 parsing
-
-Version 1.5.1
-Thanks to Alibaba, added daily motion search ,pulsar and many more 
-
-Version 1.5.0
-Thanks to Alibaba, added download support and fix url resolver issue with helix, plus many more
-
-Version 1.4.9
-bug fix, Channels could contain multiple item which could have each externallink
-
-Version 1.4.8
-Alibaba changes, bug fix
-
-Version 1.4.7
-Alibaba changes, support for m3u file,urlresolver and youtube-dl 
-
-Version 1.4.6
-support appendCookie
-
-Version 1.4.5
-support regex in setCookie
-
-Version 1.4.4
-Support SaveToFile and LoadFile function
-
-Version 1.4.3
-support for clourdflare
-
-Version 1.4.2
-support for wat.tv token generation
-
-Version 1.4.1
-support iguide too
-
-Version 1.4.0
-little improvment so that one you call vipracing function to decrypt ilive and others
-
-Version 1.3.9
-Change to support the calls to Vaughnlive,ilive,p2p, and sportsdevil. Thanks to alibbaba@tvaddon.ag
-
-Version 1.3.8
-vipracing function, support for option pages
+- Versión inicial
+- Muchísimos errores ;)
 
 
-Version 1.3.7
-epoctime2 in page tag and vipracing function
+
+PalcoTV 0.2beta
+
+- Corregido error que impedía arrancar en Android
+- Se pueden lanzar los enlaces Acestreams (gracias a P2P-Streams, de enen92)
+- Añadido soporte de listas categorizadas de canales
+- Corregidos muchos errores
 
 
-Version 1.3.6
-epoctime in page tag
 
-Version 1.3.5
-enable ignorecache
+PalcoTV 0.2.5
 
-Version 1.3.4
-fix to ignore if regex fails
-
-Version 1.3.3
-bug fixed for externallink
-
-Version 1.3.2
-Added get_packed_iphonetv_url
-
-Version 1.3.1
-improved Dag function, now it support to recive the dag url directly
-
-Version 1.3.0
-Support for x-forward
-
-Version 1.2.9
-Support for vaughlive
-
-Version 1.2.8
-Support for f4m via regex.
-
-Version 1.2.7
-Support for playtv.fr: Pass channelid to the function get_url
-<expres>$pyFunction:playtvfr.get_url('$doregex[getplayerid]')</expres>
-
-Version 1.2.5
-Bug fix
-
-Version 1.2.5
-Support for playmedia
-
-Version 1.2.4
-Added get_saw_rtmp and get_leton_rtmp support
-
-Version 1.2.3
-Support for decrypting wise function, also DAG url player
-
-Version 1.2.2
-Support for retry for ustream links, now new function is available
-
-Version 1.2.1
-Corrected the copy paste problem lol
-
-Version 1.2.0
-Cloned from divingmules and added all my changes
+- Soporte de listas M3U de SimpleTV
+- Nueva biblioteca de listas M3U.- Añadido enlace al tutorial para torpes en Youtube ;)
+- Agregada sección de listas M3U para descargar
+- Nuevas "multilistas": XBMCyMás, SPlive, Listas MashUp
+- Nuevas listas XML: Gurb, White Noise, José Rodriguez, etc. (gracias a todos por compartir!)
 
 
-Version 1.1.3
-update for XBMC Gotham compatibility
+
+PalcoTV 0.2.6
+
+- Añadido buscador de canales en las listas M3U
+- Ahora se descargan las listas y se abren automáticamente
+- Corregidos muchos bugs y mejorado el parseado de listas
+
+
+
+PalcoTV 0.2.61
+
+- Se corrige un bug crítico por el que muchos canales rtmp no se reproducen
+
+
+
+PalcoTV 0.2.7
+
+- Mejorado el comportamiento del buscador (por el momento, sólo las listas M3U descargadas)
+- Agregada agenda de programación TV con eventos de fútbol de la TV de España, Italia y Reino Unido
+  (Cada evento de la agenda se sincroniza con el buscador de canales)
+- Agregado soporte de listas PLX, con biblioteca online de descarga de listas y varias listas actualizables
+- Nuevos logos y diseño en general
+
+
+
+PalcoTV 0.2.8
+
+- Agregada la agenda de programación de fútbolenlaTV.com
+- Búsquedas en la agenda cuando hay varios canales de emisión
+- Soporte de nuevas listas P2P (Acestreams, Sopcast y Torrents)
+- El buscador es funcional en listas M3U, PLX y P2P
+- Corregida la lectura de la lista XML "The Blacklist"
+- Se ha agregado la lista de origen de un canal a los resultados de la búsqueda
+- Las listas se guardan con su extensión correspondiente (*.M3U, *.PLX, *.P2P)
+
+
+
+PalcoTV 0.2.85
+
+- Soporte de canales de Movistar TV (utilizando la conexión del abonado)
+- Soporte de thumbnails, fanarts y comentarios en las listas P2P, tanto por defecto en la lista como para cada entrada
+
+
+
+PalcoTV 0.2.86
+
+- Soporte de listas JSN
+- Corregido error por el cuál las listas se descargaban erróneamente en "Mis listas" por el formato entre corchetes (negrita, color, cursiva)
+
+
+
+PalcoTV 0.2.9
+
+- Conectores de Allmyvideos, Streamcloud, Played.to y Vidspot
+- Soporte de enlaces cortos de más de 340 servicios de acortadores de enlaces
+- Soporte de vídeos y canales de usuarios de Youtube
+- Mejorado el parseo de listas JSN y PLX y mejorado el formato de presentación de listas y canales
+- La carpeta "mis listas" pasa a ubicarse en XBMC/addons para evitar que se borren las listas al actualizar el addon
+- Añadido control parental sobre las listas de adultos
+- Añadidas nuevas listas de películas, documentales y deportes
+- Varios bugs menores corregidos
+
+
+
+PalcoTV 0.3.0
+
+- Regex de Vaughnlive, Vercosasgratis, 9stream, Freetvcast, Freebroadcast, Cast247 y Shidurlive
+- Parsers de Arenavision.in, 1torrent.ru, torrent-tv.ru, seriesadicto.com, laligatv.es y latuerka.es
+- Mejorado el parseo de listas PLX y M3U, con soporte de thumbnails y fanarts, enlaces de conectores multimedia soportados, llamada a otras listas y series online.
+- Nuevos conectores multimedia: Vk, Nowvideo.sx
+- Nueva sección de actualización de parsers, conectores y el addon
+- Soporte de menús XML personalizados (skins), a través de URL o la ID de Pastebin. Se incluyen los skins oficiales de Juarrox, Reig, El Mundo de Sebas y Simple.
+- Nueva intro de presentación de PalcoTV, así como intros de los skins Reig y El Mundo de Sebas.
+- Pequeños cambios y mejoras de presentación de canales ;) 
+
+
+PalcoTV 0.3.01 --> 0.3.05 
+
+- Corrección de bugs
+
+
+PalcoTV 0.3.1
+
+- Regex de series: Soporte de seriesyonkis, seriesblanco, seriesmu, seriesflv y seriesadicto
+- Implementados nuevos enlaces #multilinks y #multiparsers en listas M3U
+- Conectores multimedia: Añadidos Novamov, Gamovideo, Moevideos, Movshare, Powvideo, VeeHD, Tumi y Videobam
+- Corregidores conectores Vk, Streamin.to, Allmyvideos y Vidspot
+- Se corrige limitación del API de Youtube: Ahora se muestran hasta 200 vídeos por lista de reproducción
+- Soporte de EPG por módulos (Miguía.tv y Fórmulatv.com) e integración del EPG en multilinks
+- Nuevas opciones de configuración: EPG, Modos de vista, listas online, lanzador de torrents y magnets, etc.
+- Opción de elegir KMediaTorrent, Pulsar o Stream como reproductor de Torrents y Magnet links
+- Buscador Unificado de Magnets (BUM+) que devuelve resultados de motores de búsqueda de torrents: Kickass, Isohunt, BitSnoop, Monova
+- Soporte de listas M3U musicales de Goear
+- Añadido scraper de películas: Permite captura automática de metadatos de películas de IMDB y themoviedb.org
+- Lector de álbumes de imágenes (archivos CBR/CBZ)
+- Añadidos varios web parsers de programación TV
